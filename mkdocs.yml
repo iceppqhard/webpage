@@ -1,0 +1,81 @@
+site_name: DarQ Experiment
+docs_dir: 'docs'
+copyright: 'Copyright ©DarQ Collaboration All Rights Reserved.'
+
+######
+
+nav:
+  - Introduction: index.md
+
+######
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: light blue
+    accent: indigo
+  features:
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - tables
+  # Content tables
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  # /Content tables
+  # Code Block
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  # /Code Block
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  # marmaid
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # graphviz (needs dot command)
+  - mkdocs_graphviz
+  # /graphviz
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+
+extra_javascript:
+  # graphviz
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
+
+plugins:
+  - glightbox
+  - search:
+      lang:
+        - en
+        - ja
+  - tags
+  #- drawio-exporter:
+  #    cache_dir: "drawio-exporter"
+  #    drawio_executable: null
+  #    drawio_args: ["--no-sandbox"]
+  #    format: svg
+  #    embed_format: "{img_open}{img_src}{img_close}"
+  #    sources: "*.drawio"
+
+extra:
+  generator: false
