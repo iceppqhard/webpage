@@ -1,6 +1,6 @@
 # DarQ homepage
 
-- homepageは https://github.com/iceppqhard/webpage で公開されます。
+- homepageは [ここ](https://iceppqhard.github.io/webpage/) で公開されます。
 - [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) で静的 HTML を生成します。マークアップ言語は Markdown です。
 
 ## 基本的な使い方
