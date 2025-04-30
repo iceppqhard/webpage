@@ -5,7 +5,8 @@ copyright: 'Copyright ©DarQ Collaboration All Rights Reserved.'
 ######
 
 nav:
-  - Introduction: index.md
+  - Overview: index.md
+  - Collaboration: contents/collaboration.md
 
 ######
 
